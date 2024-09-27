@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/00_SOURCE/dump-yipin.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/01_ODS/create_ods_table.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/05_DM/create_dm_tables.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/06_RPT/create_rpt_sale_tables.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/06_RPT/create_rpt_sku.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/06_RPT/create_rpt_user.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/06_RPT/insert_rpt_sale.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/07_export2MySQL/create_olap_db(mysql).sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/07_export2MySQL/create_rpt_sale_tables(presto).sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/Conf/1、Hive注释信息中文乱码解决.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/02_DWD/DT/create_dim_table.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/02_DWD/DT/insert-dim.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/02_DWD/FT/create_fact_table.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/02_DWD/FT/insert-fact.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/03_DWB/create_dwb_tables.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/03_DWB/insert_dwb.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/04_DWS/create_dws_tables.sql" dialect="HiveQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/04_DWS/insert_dws_user.sql" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/../../project/yp_xls/pro/insert_dws_user.sql" dialect="GenericSQL" />
+  </component>
+</project>
