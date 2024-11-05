@@ -1,0 +1,60 @@
+2024-11-05 08:24:35,377 - [INFO] - backend_server.py[7]: 日志开启了~~~
+2024-11-05 08:24:35,391 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:24:35,415 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:24:35,416 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:24:35,417 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:24:35,418 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:24:35,446 - [INFO] - mysql_util.py[90]: 执行了execute方法 sql为create table backend_logs_monitor(id INT PRIMARY KEY AUTO_INCREMENT COMMENT '自增ID', time_record TIMESTAMP NOT NULL COMMENT '本次采集记录的最大时间', gather_line_count INT NULL COMMENT '本次采集条数');
+2024-11-05 08:24:35,446 - [INFO] - mysql_util.py[139]: 在metadata创建了数据表backend_logs_monitor
+2024-11-05 08:24:35,447 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:24:35,469 - [INFO] - mysql_util.py[90]: 执行了execute方法 sql为create table backend_logs(
+    `code` varchar(50) PRIMARY KEY COMMENT '商品条码',
+    `name` varchar(200) DEFAULT '' COMMENT '商品名称',
+    `spec` varchar(200) DEFAULT '' COMMENT '商品规格',
+    `trademark` varchar(100) DEFAULT '' COMMENT '商品商标',
+    `addr` varchar(200) DEFAULT '' COMMENT '商品产地',
+    `units` varchar(50) DEFAULT '' COMMENT '商品单位(个、杯、箱、等)',
+    `factory_name` varchar(200) DEFAULT '' COMMENT '生产厂家',
+    `trade_price` DECIMAL(50, 5) DEFAULT 0.0 COMMENT '贸易价格(指导进价)',
+    `retail_price` DECIMAL(50, 5) DEFAULT 0.0 COMMENT '零售价格(建议卖价)',
+    `update_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+    `wholeunit` varchar(50) DEFAULT NULL COMMENT '大包装单位',
+    `wholenum` int(11) DEFAULT NULL COMMENT '大包装内装数量',
+    `img` varchar(500) DEFAULT NULL COMMENT '商品图片',
+    `src` varchar(20) DEFAULT NULL COMMENT '源信息', 
+    INDEX (update_at)
+);
+2024-11-05 08:24:35,469 - [INFO] - mysql_util.py[139]: 在retail创建了数据表backend_logs
+2024-11-05 08:24:35,470 - [INFO] - backend_server.py[43]: 获取所有的文件名['D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-00.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-01.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-02.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-03.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-04.log']
+2024-11-05 08:33:16,895 - [INFO] - backend_server.py[7]: 日志开启了~~~
+2024-11-05 08:33:16,904 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:33:16,924 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:33:16,925 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:33:16,925 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:33:16,925 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:33:16,950 - [INFO] - mysql_util.py[90]: 执行了execute方法 sql为create table backend_logs_monitor(id INT PRIMARY KEY AUTO_INCREMENT, file_name VARCHAR(255) NOT NULL COMMENT '处理文件名称', process_lines INT NULL COMMENT '文件处理行数', process_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '文件处理时间');
+2024-11-05 08:33:16,950 - [INFO] - mysql_util.py[139]: 在metadata创建了数据表backend_logs_monitor
+2024-11-05 08:33:16,950 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:33:16,951 - [WARNING] - mysql_util.py[142]: 在retail已经存在了数据表backend_logs,故没有进行数据表的创建
+2024-11-05 08:33:16,951 - [INFO] - backend_server.py[43]: 获取所有的文件名['D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-00.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-01.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-02.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-03.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-04.log']
+2024-11-05 08:34:06,028 - [INFO] - backend_server.py[7]: 日志开启了~~~
+2024-11-05 08:34:06,037 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:34:06,038 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:34:06,039 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:34:06,039 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:34:06,039 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:34:06,041 - [WARNING] - mysql_util.py[142]: 在metadata已经存在了数据表backend_logs_monitor,故没有进行数据表的创建
+2024-11-05 08:34:06,041 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:34:06,042 - [WARNING] - mysql_util.py[142]: 在retail已经存在了数据表backend_logs,故没有进行数据表的创建
+2024-11-05 08:34:06,042 - [INFO] - backend_server.py[43]: 获取所有的文件名['D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-00.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-01.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-02.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-03.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-04.log']
+2024-11-05 08:41:15,609 - [INFO] - backend_server.py[7]: 日志开启了~~~
+2024-11-05 08:41:15,619 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:41:15,620 - [INFO] - mysql_util.py[29]: 创建链接localhost:3306//root, 成功!!!
+2024-11-05 08:41:15,621 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:41:15,621 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:41:15,621 - [INFO] - mysql_util.py[49]: 切换了数据库metadata
+2024-11-05 08:41:15,623 - [WARNING] - mysql_util.py[142]: 在metadata已经存在了数据表backend_logs_monitor,故没有进行数据表的创建
+2024-11-05 08:41:15,623 - [INFO] - mysql_util.py[49]: 切换了数据库retail
+2024-11-05 08:41:15,624 - [WARNING] - mysql_util.py[142]: 在retail已经存在了数据表backend_logs,故没有进行数据表的创建
+2024-11-05 08:41:15,624 - [INFO] - backend_server.py[43]: 获取所有的文件名['D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-00.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-01.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-02.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-03.log', 'D:/Python/Pycharm/project/ETL1/logs/log_data/2024-11-04-17-42-04.log']
+2024-11-05 08:41:15,625 - [INFO] - backend_server.py[51]: 获取处理过的文件名列表[]
